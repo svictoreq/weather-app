@@ -1,0 +1,12 @@
+header {
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fc5a2ce3;
+	color: #FFFFFF;
+}
+
+header input.location-input {
+	min-width: unset;
+}
