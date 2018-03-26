@@ -1,0 +1,32 @@
+main {
+	background: url('../img/pattern.svg');
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main > .wrapper {
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main > .wrapper > h1 {
+	font-size: 45px;
+	font-weight: 100;
+}
+
+main > .wrapper > input {
+	min-width: 174px;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #555555;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+}
