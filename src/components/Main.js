@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import InputContainer from './InputContainer';
+import LocationContainer from './LocationContainer';
 import '../css/Main.css';
 
 const Main = (props) => {
@@ -7,7 +7,7 @@ const Main = (props) => {
 		<main>
 			<Fragment>
 				<h1>Enter a City and State</h1>
-				<InputContainer />
+				<LocationContainer />
 			</Fragment>
 		</main>
 	);
