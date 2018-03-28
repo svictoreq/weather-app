@@ -1,0 +1,11 @@
+.forecast {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.forecast .forecast-heading {
+	font-size: 65px;
+	color: #333333;
+	font-weight: 100;
+}
