@@ -5,7 +5,7 @@ import LocationContainer from './LocationContainer';
 const Header = (props) => {
 	return (
 		<header>
-			<h1>Clever Title like Sancrisoft</h1>
+			<h1>Weather App</h1>
 			<LocationContainer />
 		</header>
 	)
