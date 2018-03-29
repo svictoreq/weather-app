@@ -9,3 +9,24 @@
 	color: #333333;
 	font-weight: 100;
 }
+
+.forecast > .days-items {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
+.forecast > .days-items > .day {
+	margin: 35px;
+}
+
+.forecast > .days-items > .day > figcaption {
+	font-size: 30px;
+	margin: 0.83em;
+	font-weight: 100;
+}
+
+.forecast > .days-items .weather-icon {
+	height: 130px;
+}

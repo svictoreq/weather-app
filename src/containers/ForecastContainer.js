@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import queryString from 'query-string'
 import { getWeather, getForecast } from '../utils/api.js';
 import Forecast from '../components/Forecast';
@@ -42,7 +42,7 @@ class ForecastContainer extends Component {
 
 	render() {
 		if (!this.state.loading && this.state.foundCity) {
-			return <Forecast heading={this.state.city} />
+			return <Forecast heading={this.state.city} list={this.state.weatherData.list} />
 		} else if (this.state.loading) {
 			return <Forecast heading="Loading" />
 		} else if (!this.state.loading && !this.state.foundCity) {

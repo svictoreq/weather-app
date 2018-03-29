@@ -17,3 +17,8 @@ button, .button {
 	border-radius: 4px;
 	text-decoration: none;
 }
+
+figure {
+	margin: 0;
+	padding: 0;
+}
