@@ -42,7 +42,6 @@ class ForecastContainer extends Component {
 
 	render() {
 		if (!this.state.loading && this.state.foundCity) {
-			console.log(this.state.weatherData)
 			return <Forecast heading={`${this.state.city.name}, ${this.state.city.country}`} list={this.state.weatherData.list} />
 		} else if (this.state.loading) {
 			return <Forecast heading="Loading" />
