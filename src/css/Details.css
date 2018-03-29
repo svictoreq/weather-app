@@ -1,0 +1,48 @@
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.details .city-heading {
+	font-size: 65px;
+	font-weight: 100;
+	color: #333333;
+	margin-bottom: 0;
+}
+
+.details > .day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 35px;
+}
+
+.details > .day > figcaption {
+	font-size: 30px;
+	margin: 0.83em;
+	font-weight: 100;
+}
+
+.details > .day > .weather-icon {
+	height: 130px;
+}
+
+.details > .detail-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.details > .detail-list > .detail {
+	font-size: 34px;
+	font-weight: 100;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.details > .detail-list > .detail.description {
+	text-transform: capitalize;
+	margin-top: 0;
+}

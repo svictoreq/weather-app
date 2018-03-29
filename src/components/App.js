@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import NotFound from './NotFound';
 import Forecast from '../containers/ForecastContainer';
+import Details from './Details';
 
 class App extends Component {
 	render() {
@@ -11,6 +12,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route path="/forecast" component={Forecast} />
+					<Route path="/details/:city" component={Details} />
 					<Route component={NotFound} />
 				</Switch>
 			</Router>

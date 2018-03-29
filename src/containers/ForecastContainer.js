@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import queryString from 'query-string'
-import { getWeather, getForecast } from '../utils/api.js';
+import { getForecast } from '../utils/api.js';
 import Forecast from '../components/Forecast';
 import '../css/Forecast.css';
 

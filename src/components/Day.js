@@ -1,15 +1,32 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+import queryString from 'query-string';
 import { getDate } from '../utils/helpers';
 
-const Day = ({data, index}) => {
-	console.log(data);
+const Day = ({data, key, location, history, heading, click}) => {
 	const icon = data.weather[0].icon;
-	return (
-		<figure className="day">
-			<img src={`/img/weather-icons/${icon}.svg`} alt="Weather Icon" className="weather-icon" />
-			<figcaption>{getDate(data.dt)}</figcaption>
-		</figure>
-	);
+	const handleClick = () => {
+		const city = window.encodeURI(queryString.parse(location.search).city);
+		history.push({
+			pathname: `/details/${city}`,
+			state: {...data, heading: heading}
+		})
+	}
+	if (click) {
+		return (
+			<figure className="day" key={key} onClick={handleClick}>
+				<img src={`/img/weather-icons/${icon}.svg`} alt="Weather Icon" className="weather-icon" />
+				<figcaption>{getDate(data.dt)}</figcaption>
+			</figure>
+		);
+	} else {
+		return (
+			<figure className="day">
+				<img src={`/img/weather-icons/${icon}.svg`} alt="Weather Icon" className="weather-icon" />
+				<figcaption>{getDate(data.dt)}</figcaption>
+			</figure>
+		);
+	}
 };
 
-export default Day;
+export default withRouter(Day);

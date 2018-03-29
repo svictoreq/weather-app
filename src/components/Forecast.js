@@ -9,7 +9,7 @@ const Forecast = ({heading, list}) => {
 			<Header />
 				<div className="forecast">
 				<h1 className="forecast-heading">{heading}</h1>
-				{ list ? <DayItems data={list} /> : null }
+				{ list ? <DayItems data={list} heading={heading} /> : null }
 			</div>
 		</Fragment>
 	);
