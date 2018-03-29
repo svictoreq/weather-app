@@ -26,7 +26,7 @@ class ForecastContainer extends Component {
 				this.setState({
 					loading: false,
 					foundCity: true,
-					city: res.city.name,
+					city: res.city,
 					weatherData: res,
 			})
 		})
@@ -42,7 +42,8 @@ class ForecastContainer extends Component {
 
 	render() {
 		if (!this.state.loading && this.state.foundCity) {
-			return <Forecast heading={this.state.city} list={this.state.weatherData.list} />
+			console.log(this.state.weatherData)
+			return <Forecast heading={`${this.state.city.name}, ${this.state.city.country}`} list={this.state.weatherData.list} />
 		} else if (this.state.loading) {
 			return <Forecast heading="Loading" />
 		} else if (!this.state.loading && !this.state.foundCity) {
