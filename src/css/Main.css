@@ -1,5 +1,6 @@
 main {
-	background: url('../img/pattern.svg');
+	background: url('/img/pattern.svg') no-repeat;
+	background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
