@@ -19,6 +19,7 @@
 
 .forecast > .days-items > .day {
 	margin: 35px;
+	cursor: pointer;
 }
 
 .forecast > .days-items > .day > figcaption {
