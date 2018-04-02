@@ -1,6 +1,10 @@
 # Tarea de entrenamiento de React por Victor Requena.
 Este es el proyecto final del entrenamiento de React, una aplicación que muestra el clima de la ciudad buscada en un rango de 5 días.
 
+El enlace en donde se encuentra la aplicación es el siguiente:
+https://sancrisoft-weather-app.firebaseapp.com
+La aplicación que se encuentra alojada en Firebase, es la versión mejorada.
+
 ## Descripción.
 La aplicación fue construida en dos versiones: La más similar a la original, y la mejorada. La diferencia entre ambas versiones, es que la original muestra el tiempo en horario local, y la mejorada, muestra el tiempo en la zona horaria de la ciudad seleccionada.
 
